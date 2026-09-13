@@ -13,7 +13,7 @@ Ashadh 2084 BS, mid-July 2026 – mid-July 2027 AD), per **Finance Act
 ## File
 
 ```
-calculate_tax   # everything — slabs, deductions, CLI, and library functions
+calculate_tax.py   # everything — slabs, deductions, CLI, and library functions
 ```
 
 No external packages required — only the Python standard library
@@ -59,11 +59,11 @@ The first slab is a Social Security Tax (SST). It's waived (0%) for:
 ### Command line
 
 ```bash
-python calculate_tax --income 1200000
+python calculate_tax.py --income 1200000
 ```
 
 ```bash
-python calculate_tax --income 1800000 --ssf \
+python calculate_tax.py --income 1800000 --ssf \
   --life-insurance 30000 --health-insurance 15000 \
   --medical-expenses 10000 --female-single-income
 ```
