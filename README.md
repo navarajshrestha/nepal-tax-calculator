@@ -110,7 +110,7 @@ Net income after tax: Rs 1,706,400.00
 ### As a Python library
 
 ```python
-from nepal_tax_2083_84 import calculate_tax
+from calculate_tax import calculate_tax
 
 result = calculate_tax(
     gross_income=1_800_000,
@@ -145,7 +145,7 @@ for band in result["slab_breakdown"]:
 
 ```bash
 python -c "
-from nepal_tax_2083_84 import calculate_tax
+from calculate_tax import calculate_tax
 r = calculate_tax(gross_income=5_000_000)
 assert r['total_tax'] == 955000.0
 print('OK:', r['total_tax'])
